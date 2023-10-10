@@ -2700,7 +2700,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #a44aca;
+		background: #4a54ca;
 		color: #d2f2e9;
 		height: 100%;
 		overflow-y: auto;
@@ -3076,7 +3076,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #ca554a80;
+						background: #4a54ca;
 						color: #ffffff;
 						content: '\f0c9';
 						display: block;
