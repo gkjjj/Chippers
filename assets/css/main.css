@@ -2206,6 +2206,7 @@ input, select, textarea {
 
 			.image.main img {
 				border-radius: 0;
+				opacity: 0.80;
 			}
 
 /* List */
