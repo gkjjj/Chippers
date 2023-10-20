@@ -1,89 +1,165 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+	<head>
+		<title>GK Triple J Enterprises</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.5.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.5.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+		<!-- Header -->	
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/octLogo.JPG" alt="" /></span>
+					<h1 id="logo"><a href="#">GK Triple J Enterprises</a></h1>
+					<p>You dream it, we find it!</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active">About</a></li>
+						<li><a href="#two">Strategic Solutions</a></li>
+						<li><a href="#three">Industry Insights</a></li>
+						<li><a href="#five">Partnership Opportunities</a></li>
+						<li><a href="#four">Contact Us</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://angel.co/u/claudius-solomon" class="icon brands fa-angellist"><span class="label">AngelList</span></a></li>
+						<li><a href="https://www.linkedin.com/in/claudius-solomon-ba3a2494/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="mailto:karene@gkjjjenterprises.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</footer>
+			</section>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+				<!-- Main -->
+					<div id="main">
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+						<!-- One -->
+							<section id="one">
+								<div class="image main" data-position="center">
+									<img src="assets/images/backgroundforGKJJJ.jpg" alt="" />
+								</div>
+								<div class="container">
+									<header class="major">
+										<h2>Helping You Build Your Empire One Step at a Time</h2>
+
+
+											<p>
+												We specialize in strategic business plans and marketing plans to take your organization to higher levels of success.
+												Call 1-800-788-8860
+												<!-- <a href="resume.pdf">Check out my Resume</a> -->
+											</p>
+										
+									</header>
+									<h3>
+										Our Valued Clientele
+									</h3>
+									<p>
+										At GK Triple J, we are dedicated to serving a diverse range of clients from various sectors, including startups, small to medium-sized businesses, non-profit organizations, and large enterprises. 
+										Our team of experts has the skills and knowledge to meet the unique demands and future goals of your business, regardless of its size or industry. We believe in nurturing relationships with all our clients and we take immense pride in seeing them evolve and reach new heights of success. With a focus on creating strategic plans tailored to your needs and objectives, we empower your business to navigate through market challenges and capitalize on potential opportunities.
+									</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<h3>Strategy! Strategy! Strategy!</h3>
+									<p>
+										We offer comprehensive strategic planning and marketing solutions designed to catapult your business towards success. 
+										Our seasoned professionals will work with you to understand your goals, target audience, and market landscape to craft bespoke strategies that align with your bespoke needs. 
+										We take a data-driven approach, using insights from market analysis, customer feedback, and business performance, to make informed decisions that generate results. 
+									</p>
+									<p>
+										Whether you're a startup looking to establish your brand, an SME aiming for expansion, or a large enterprise targeting further growth, our innovative, custom-crafted strategies are the key that unlocks the door to your business aspirations. 
+										Our mission is to empower your business with the strategic tools necessary to navigate the market challenges and capitalize on lucrative opportunities.
+									</p>
+									
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="container">
+									<h3>Insights</h3>
+									<p>
+										We delve into the latest trends, news, and progressive strategies shaping the business landscape. 
+										We believe that staying ahead of the game requires a constant pulse on the market dynamics and an understanding of the competitive currents. 
+									</p>
+									<p>	
+										Our team of professionals curates content and shares their expert insights to help you navigate through the complex, ever-changing business environment. 
+										Whether you're looking for the latest industry report, analytical commentary or thought leadership articles, this is your essential resource. 
+										New perspectives await you – all crafted to inspire innovation, growth and successful decision-making for your business.
+									</p>
+								</div>
+							</section>
+
+						<!-- Five -->
+						<section id="five">
+							<div class="container">
+								<h3>Partnering</h3>
+								<p>
+									We are committed to fostering mutually beneficial collaborations that can propel all involved parties towards growth and success. 
+									We believe that together, we can achieve more and make greater strides in the business world. 
+									If you're a like-minded business looking to explore how we can jointly uncover new potential markets, offer complementary services, or enhance existing products and services, we are open to the conversation. 
+								</p>
+								<p>
+									We are keen to form strategic alliances and partnerships that not only expand our influence but also contribute positively to your growth story. 
+									Let's discuss how we can synergistically work towards streams of opportunities and shared prosperity in this competitive business landscape.
+								</p>
+							</div>
+						</section>
+
+						<!-- Four -->
+							<section id="four">
+								<div class="container">
+									<h3>Contact US</h3>
+									<p>Do you want to hire me? Sure! Please fill out the information below.</p>
+									<!-- <form method="post" action="#"></form> -->
+									<form action="https://formspree.io/xknvblbp" method="POST">
+										<div class="row gtr-uniform">
+											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
+											<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
+											<div class="col-12">
+												<ul class="actions">
+													<li><input type="submit" class="primary" value="Send Message" /></li>
+													<li><input type="reset" value="Reset Form" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; GKJJJ. All rights reserved.</li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
